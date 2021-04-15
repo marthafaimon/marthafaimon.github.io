@@ -1,4 +1,12 @@
-ul li { vMenu2.JPG 
+.active a:link {
+    background-color: white;
+}
+
+nav {
+    top: 80px;
+}
+
+nav ul li { 
     list-style-type: none;
     margin-bottom: 2px;
     display: block;
@@ -6,5 +14,18 @@ ul li { vMenu2.JPG
     padding: 15px 15px 15px 15px;
     background-color: white;
     width: 200px;
+    position: relative;
     text-align: center;
-    
+    font-weight: bold;
+}
+
+nav ul>li ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+}
+
+nav>ul>li:hover>ul{
+    display: block;
+}
