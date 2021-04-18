@@ -1,3 +1,31 @@
 h1 {
-    color: #CD044A
+    color: hsl(339, 96%, 41%)
    }
+
+   a:link {
+    color: hsl(0, 0%, 0%);
+  }
+  a:visited {
+    color: hsl(339, 96%, 41%);
+  }
+
+  a:hover {
+      color:hsl(339, 97%, 28%)
+  }
+
+p:first-of-type:first-letter {
+    font-size: 150%;
+    color: hsl(339, 96%, 41%);
+  }
+
+  p { 
+    text-indent: 30px;
+ }
+ 
+ div {
+    background-color: white;
+    width: 1000px;
+    padding: 25px;
+    border: 0px solirgb(0, 0, 0)vy;
+    margin: 25px;
+  }
