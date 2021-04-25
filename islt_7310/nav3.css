@@ -12,6 +12,7 @@ nav {
 nav ul {margin:0;
     padding: 0%;
 list-style:none;
+justify-content: space-between;
 }
 
 nav li { margin-bottom: 1em;
@@ -31,16 +32,10 @@ color: hsl(339, 96%, 41%);
 
 
 
-
 @media screen and (min-width: 640px) {
 .nav-toggle-label{
     display: none;
 } 
-
-header { display: grid;
-   grid-template-columns: 0.5fr 0.5fr;
-}
-.logo { grid-column: 1/1;}
 
 nav {
     position: unset;
@@ -92,41 +87,3 @@ background-color:#ffffff;
 text-align: center;   
 }
 
-footer ul { list-style-type: none;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    margin: 0.5rem;
-    padding: 0.5rem;
-}
-footer li {
-    font-size: 0.75rem;
-    margin-bottom: 0.5rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-}
-footer li a {
-    color:#AD9C7F;
-    text-decoration: none;
-}
-#copyright {
-    color: hsl(339, 96%, 41%);
-} }
-@media screen and (max-width: 640px) {
-    footer li a{
-        display: none;
-    }
-    .sub{ display: none;} 
-}
-    
-    #copyright {
-        color: #7C618F; 
-        display: flex;
-        text-align: center;
-       grid-template-columns: 0.5fr 0.5fr;
-    }
-  
-    
