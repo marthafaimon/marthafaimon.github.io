@@ -1,21 +1,23 @@
 
-nav li ul{ 
-    position: absolute;
+nav { 
+    position: relative;
     text-align: center;
-    top: 80px;
+    top: 80px%;
     left: 0;
     background: #ffffff;
     width:100%;
     display: none;  
-    margin:0;
-    padding: 0%;
-    list-style:none;
-    margin-bottom: 1em;
-    margin-left: 1em; 
-    list-style: none;
 }
 
-li{list-style:none;}
+nav ul {margin:0;
+    padding: 0%;
+list-style:none;
+}
+
+nav li { margin-bottom: 1em;
+margin-left: 1em; 
+list-style: none;  
+}
 
 nav a { color : hsl(0, 0%, 0%);
 text-decoration: none;
@@ -25,6 +27,8 @@ font-size: 1rem;
 nav a:hover {
 color: hsl(339, 96%, 41%);
 }
+
+
 
 
 
