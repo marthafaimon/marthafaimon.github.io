@@ -1,3 +1,27 @@
+@font-face { 
+
+    font-family: Vibur; 
+    
+    src: url("https://marthafaimon.github.io/islt_7310/Vibur-Regular.ttf"); 
+    
+    }
+
+ @font-face { 
+
+        font-family: Quicksand; 
+        
+        src: url("https://marthafaimon.github.io/islt_7310/Quicksand-Regular.ttf"); 
+        
+        } 
+
+        @font-face { 
+
+            font-family: Fredericka; 
+            
+            src: url("https://marthafaimon.github.io/islt_7310/FrederickatheGreat-Regular.ttf"); 
+            
+            } 
+
 :root {
     --clr-primary-200: #D3739C;
     --clr-primary-400: #FF0079;
@@ -5,8 +29,8 @@
     --clr-neutral-100: #F3F6F5;
     --clr-neutral-900: #292239;
 
-    --ff-primary: 'Candara';
-    --ff-accent: 'Arial';
+    --ff-primary: 'Quicksand';
+    --ff-accent: 'Quicksand';
 }
 
 *,
@@ -81,10 +105,29 @@ section{
     width: min(90%, 70.5rem)
 }
 
+.container-right{
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+    text-align: right;
+}
+
+.container-left{
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+    text-align: left;
+}
+
 .split{
     display: flex;
     flex-direction: column;
 }
+
+blockquote {
+    font-family: Fredericka;
+    font-size: 2rem;
+    margin-left: 15rem;
+    margin-right: 1rem;
+  }
 
 @media (min-width: 40em){
     .split{
@@ -101,7 +144,7 @@ section{
 }
 
 .container--narrow{
-    max-width: 50;
+    max-width: 50em;
 }
 
 .bg-light{
@@ -118,3 +161,64 @@ section{
 .bg-dark{
     background-color: var(--clr-neutral-900);}
 
+/*print stylesheet*/
+
+@media print {
+* {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    padding: 0rem !important;
+}
+
+.nav,
+.sidebar,
+.nav-toggle-label span,
+.nav-toggle,
+.footer{
+    display: none;
+}
+
+/*image none*/
+img{
+     display: none;
+}
+
+.header{
+    margin-bottom: 0;
+    border: none;
+    text-align: center;
+    font-family: "candara";
+}
+
+a[href^="https:"]::after {
+    content: " ["attr(href)"]";
+    color: blue;
+}
+
+@page{
+    margin: 1in
+}
+
+@page :first {
+    margin-top: 1in
+}
+
+blockquote{
+    font-family: "candara";
+    font-size: 11pt;
+}
+
+h2, ul{
+    page-break-after: avoid;
+    font-family: "candara";
+}
+
+p, ul{
+    orphans: 3;
+    widows: 3;
+    font-size: 11pt;
+    font-family: "candara";
+}
+}
