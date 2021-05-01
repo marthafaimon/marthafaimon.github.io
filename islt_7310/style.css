@@ -131,6 +131,15 @@ blockquote {
     margin-right: 1rem;
   }
 
+  .zoom {
+    padding: 0;
+    transition: transform .2s;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.5); /
+  }
+
 @media (min-width: 40em){
     .split{
         flex-direction: row;
