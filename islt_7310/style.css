@@ -103,12 +103,12 @@ section{
 }
 
 .container{
-    margin-inline: auto; 
+    margin-inline-start: auto; 
     width: min(90%, 70.5rem)
 }
 
 .container-right{
-    margin-inline: auto;
+    margin-inline-start: auto;
     width: min(90%, 70.5rem);
     text-align: right;
 }
@@ -142,9 +142,11 @@ blockquote {
 
 .iframe-container{
     position: relative;
-    width: 100%;
+    width: 60%;
     padding-bottom: 56.25%;
     height: 0;
+    margin-left: auto;
+    margin-right: 2em;
 }
 
 .iframe-container iframe{
@@ -154,6 +156,39 @@ blockquote {
     width: 100%;
     height: 100%;
 }
+
+table{
+    width: 80%;
+    /*border-spacing: 0px;*/
+}
+
+th {
+    text-align: left;
+}
+
+caption{
+    text-align: left;
+    font-size: 25pt;
+}
+
+table, th, td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+tr:nth-child(even){
+    background-color: #fff;
+}
+
+tr:nth-child(odd){
+    background-color: #ddd;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 @media (min-width: 40em){
     .split{
