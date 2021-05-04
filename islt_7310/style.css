@@ -190,6 +190,42 @@ tr:nth-child(odd){
     margin-right: auto;
   }
 
+   .form-group{ 
+   width: 75%;
+   margin-top:9px;
+   font-size: 21px;
+
+   }
+  
+   .form-group input,
+   .form-group textarea{
+     width:100%;
+     padding: 2px;
+     font-size: 16px;
+     border: 1px solid #000;
+     margin-top:2px;}
+
+     textarea{
+       resize: vertical;
+     }
+     button[type="submit"]{
+       width:75%;
+       border:none;
+       outline:none;
+       padding:15px;
+       font-size: 21px;
+       border-radius: 8px;
+       color: #F3F6F5;
+       background-color: #FF0079;
+       text-align: center;
+       cursor: pointer;
+       margin-top: 10px;
+}
+  button[type="submit"]:hover{
+   background-color: #D3739C;
+   transition: .3s ease background-color;
+  }
+
 @media (min-width: 40em){
     .split{
         flex-direction: row;
