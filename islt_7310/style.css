@@ -103,18 +103,18 @@ section{
 }
 
 .container{
-    margin-inline-start: auto; 
+    margin-inline-start: 5em; 
     width: min(90%, 70.5rem)
 }
 
 .container-right{
-    margin-inline-start: auto;
+    margin-inline-start: 5em;
     width: min(90%, 70.5rem);
     text-align: right;
 }
 
 .container-left{
-    margin-inline: auto;
+    margin-inline: 5em;
     width: min(90%, 70.5rem);
     text-align: left;
 }
