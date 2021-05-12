@@ -24,7 +24,7 @@
 
 :root {
     --clr-primary-200: #D3739C;
-    --clr-primary-400: #FF0079;
+    --clr-primary-400: #8F0043;
 
     --clr-neutral-100: #F3F6F5;
     --clr-neutral-900: #292239;
@@ -217,7 +217,7 @@ tr:nth-child(odd){
        font-size: 21px;
        border-radius: 8px;
        color: #F3F6F5;
-       background-color: #FF0079;
+       background-color: #8F0043;
        text-align: center;
        cursor: pointer;
        margin-top: 10px;
